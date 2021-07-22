@@ -36,10 +36,11 @@ candidate = 12
 
 while True:
     try:
+        # print(candidate)
         select.select_by_index(str(candidate))
         break
     except Exception:
-        if candidate:
+        if candidate > 1:
             candidate -= 1
         else:
             candidate = 12
